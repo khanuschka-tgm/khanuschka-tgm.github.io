@@ -20,6 +20,132 @@
   padding-bottom: 15px;
 }
 
+body{margin-top:0px;}
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #3b82f6;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b82f6
+}
+.done {
+  border-radius: 1.5rem;
+  height: 1rem;
+  width: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(6, 203, 52) !important;
+}
+
+.work {
+  border-radius: 1.5rem;
+  height: 1rem;
+  width: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 112, 25) !important;
+}
+
+.ontheline {
+  border-radius: 2rem;
+  height: 2rem;
+  width: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 0, 0) !important;
+}
+
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #7f7f7f;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5
+}
+
+.doneOut {
+  content: "";
+  background-color: rgb(6, 203, 52);
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  min-width: 3rem;
+  border-radius: 6.25rem;
+  opacity: .8
+}
+
+.workOut {
+  content: "";
+  background-color: rgb(226, 112, 25);
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  min-width: 3rem;
+  border-radius: 6.25rem;
+  opacity: .8
+}
+
+.onthelineOut {
+  content: "";
+  background-color: rgb(255, 0, 0);
+  display: inline-block;
+  height: 3rem;
+  width: 3rem;
+  min-width: 3rem;
+  border-radius: 6.25rem;
+  opacity: .8
+}
+
+
 /*===========================
     01.COMMON css 
 ===========================*/
@@ -300,7 +426,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   font-size: 18px;
-  color: #fff;
+  color : white;
+  background-color: rgba(88, 100, 255, 0.8);
   border-radius: 5px;
   position: fixed;
   bottom: 30px;
@@ -314,7 +441,7 @@ p {
 }
 
 .scroll-top:hover {
-  color: #fff;
+  color: white;
   background: rgba(88, 100, 255, 0.8);
 }
 
@@ -594,11 +721,11 @@ p {
 /*===== NAVBAR =====*/
 .navbar-area {
   position:absolute;
-  top: 100;
+  top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
-  /*max-height: 70px;*/
+  max-height: 70px;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
 }
@@ -644,6 +771,7 @@ p {
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 20px 0;
+  overflow-y: hidden;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
@@ -1380,11 +1508,15 @@ p {
 
 /* ======= footer css ======= */
 .footer {
-  background-image: url("../img/footer/footer-bg.svg");
-  background-size: cover;
-  background-position: top right;
+  
   padding-top: 260px;
   margin-top: 100px;
+}
+
+.footer .container {
+  background-image: url("../img/footer/footer-bg.svg");
+  background-size: cover;
+  overflow-y: hidden;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1401,7 +1533,7 @@ p {
 }
 
 .footer .widget-wrapper .footer-widget {
-  margin-bottom: -10px;
+  margin-bottom: 100px;
 }
 
 @media only screen and (min-width: 1400px) {
