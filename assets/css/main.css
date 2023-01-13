@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Open+Sans&display=swap");
-.hero-section .hero-content .scroll-bottom, .feature-section .single-feature .icon, .box-style .icon, .footer .widget-wrapper .footer-widget .socials li a {
+.hero-section .hero-content .scroll-bottom, .feature-section .single-feature .icon, .box-style .icon, .footer .widget-wrapper .footer-widget .socials li a { 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,7 +103,7 @@ body{margin-top:0px;}
 
 .timeline-steps .timeline-content .inner-circle:before {
     content: "";
-    background-color: #7f7f7f;
+    background-color: #f4f4f4;
     display: inline-block;
     height: 3rem;
     width: 3rem;

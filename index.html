@@ -47,7 +47,7 @@
             <div class="col-lg-12">
               <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand" href="index.html">
-                  <img src="assets/img/team/logo_website.png" alt="Logo" style="height: 50px;" /> 
+                  <img src="assets/img/team/logo_website.png" alt="Logo" style="max-height: 50px; max-width: 200px;" /> 
                 </a>
                 <button
                   class="navbar-toggler"
@@ -116,9 +116,8 @@
               <a
                 href="https://www.instagram.com/meetgreetandeatofficial/"
                 class="main-btn border-btn btn-hover wow fadeInUp"
-                data-wow-delay=".6s"
-                
-                >Instagram <i class="lni lni-instagram-filled"></i></a
+                data-wow-delay=".6s" style="color: black;border-color: black;" 
+                >Instagram <i class="lni lni-instagram-filled" style="color:black;"></i></a
               >
             </div>
           </div>
@@ -223,11 +222,11 @@
                   Our app offers a great change from other dating apps that focus only on the apperance of other person
                 </p>
               </div>
-              <a
+              <!--<a
                 href=""
                 class="main-btn btn-hover border-btn wow fadeInUp"
                 data-wow-delay=".6s"
-                >Discover More</a>
+                >Discover More</a>-->
             </div>
           </div>
         </div>
@@ -260,12 +259,16 @@
                 </div>
                 <div class="content">
                   <h3>Aleksandar Jagodic</h3>
+                  <a href="mailto:ajagodic@student.tgm.ac.at">
+                    <button type="submit" style="background-color:transparent; border-color:transparent;"> 
+                      <img src="assets/img/logo/email-outline.png" height="35"/>
+                  </a><br>
                   <p>
-                    IOS App Developer
+                  Entwicklung der iOS-App und Design Umsetzung
                   </p>
                 </div>
               </div>
-            </div>
+            </div> 
             <div class="col-lg-4 col-md-6">
               <div class="single-feature-extended">
                 <div class="teambilder">
@@ -273,8 +276,12 @@
                 </div>
                 <div class="content">
                   <h3>Stefan Paul Knaus</h3>
+                  <a href="mailto:sknaus@student.tgm.ac.at">
+                    <button type="submit" style="background-color:transparent; border-color:transparent;"> 
+                      <img src="assets/img/logo/email-outline.png" height="35"/>
+                    </a>
                   <p>
-                    Backend Developer and Algorithm Developer
+                    Erstellung der Datenbank und Entwicklung der notwendigen Algortihmen
                   </p>
                 </div>
               </div>
@@ -286,8 +293,12 @@
                 </div>
                 <div class="content">
                   <h3>Sidhant Kumar</h3>
+                  <a href="mailto:skumar@student.tgm.ac.at">
+                    <button type="submit" style="background-color:transparent; border-color:transparent;"> 
+                      <img src="assets/img/logo/email-outline.png" height="35"/>
+                    </a>
                   <p>
-                    UI Designer
+                    Entwerfen einer UI und Testung der User Experience und der Usability
                   </p>
                 </div>
               </div>
@@ -299,9 +310,15 @@
                   <img src="/assets/img/team/rion.jpg" height="200px">
                 </div>
                 <div class="content">
+                  
                   <h3>Kevin Ryan Hanuschka</h3>
+                  <a href="mailto:khanuschka@student.tgm.ac.at">
+                  <button type="submit" style="background-color:transparent; border-color:transparent;"> 
+                    <img src="assets/img/logo/email-outline.png" height="35"/>
+                  </a>
+                  </button>
                   <p>
-                    Team-Leader <br>He is also responsible for the interfaces.
+                    Team-Leader <br>Implementierung der Schnittstellen zwischen <br> IOS-App und Server, sowie Server und Datenbank
                   </p>
                 </div>
               </div>
@@ -395,10 +412,23 @@
       href="status.html"
       class="main-btn btn-hover border-btn wow fadeInUp"
       data-wow-delay=".6s"
-      >More</a> 
+      >More about the project</a>
       <div class="container" style="display: flex; justify-content: center;">
+        <div class="container" style="display: flex; justify-content: left; padding-top: 100px;">
+          <li style="font-size:30px">
+            <b>10.01.2023</b><br>
+            <span style="color: black; font-size: 17px;">
+             Das Meeting wurde gehalten und es wurden die aktuellen Stännde besprochen.<br>
+            <br> <i style="color: blue;">Aleks</i> hat die Anmeldung des User-Profils samt aller Fragen und Auswahlmöglichkeiten fertig implementiert. Er hat sich ebenfalls mit dem Chat, der Scroll- und TableView und der Responsivness der Website befasst.
+            <br><i style="color: blue;">Kevin</i> hat alle Arbeitspakete zum Thema Restaurant fertiggestellt. Ebenfalls hat er ein Match-Model als auch einen Match-Listener implementiert und hat sich ebenfalls über den Chat informiert.
+            <br><i style="color: blue;">Stefan</i> ist fertig mit dem Erstellen der Matches und der User zusammenführung. Er befindet sich im vervollständigen der Restaurant Vorschläge.
+            <br><i style="color: blue;">Sidu</i> hat alle Chat-Mockups fertiggestellt. Die vorhanden Mockups wurden verfeinert. Die Einstellungsseite, Profilseite und der Loading Screen wurde fertig designt. Er ist grad dabei die Datingöberfläche zu erstellen.
+            </span>
+          </li>
+        </div>
         <img src="assets/img/testimonial/register_page.png"  alt="logo-icon" style="height: 750px;"/> 
       </div>
+      
     </section>
     <!-- ======== subscribe-section end ======== -->
 
