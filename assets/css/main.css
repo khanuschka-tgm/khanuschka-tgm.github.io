@@ -978,6 +978,7 @@ p {
 .hero-section .hero-content .main-btn {
   border-color: #fff;
   color: #fff;
+  position: relative;
 }
 
 .hero-section .hero-content .main-btn::after {
